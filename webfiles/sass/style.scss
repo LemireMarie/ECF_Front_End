@@ -466,4 +466,67 @@ footer {
         }
     }
 }
-        
+@media screen and (max-width: 430px) {
+    #header {
+        width: 100%;
+        #nav{
+            flex-direction: column;
+            #logo{
+                height: 90px;
+                width: 30%;
+            }
+            ul{
+                display: none;
+                width: 100%; 
+            } 
+            ul.visible{
+                display: block;  
+            }
+        }
+       
+        #burger{
+            position: absolute;
+            top:2.5rem;
+            right: 4rem;
+            width: 30px;
+            height: 30px;
+            border-top: solid aliceblue 4px;
+            border-bottom: solid aliceblue 4px;
+            border-left: transparent;
+            border-right: transparent;
+            cursor: pointer;
+            background-color: transparent;
+        }
+        #burger::before, #burger::after{
+            content: "";
+            position: absolute;
+            width: 30px;
+            transform: translate(-50%,-50%);
+            height: 4px;
+            background-color: aliceblue;
+        }
+        #burger.active{
+            border: none;
+        }
+        #burger.active::before{
+            transform: translate(-50%,-50%) rotateZ(45deg);        
+        }
+        #burger.active::after{
+            transform: translate(-50%,-50%) rotateZ(-45deg);        
+        }
+        #intro #title p{
+            font-size: 1rem;
+        }
+    }
+    main{
+        #section1 p{
+            font-size: 1rem;
+        }
+    }
+    footer{
+        #news{
+            margin: 2.5rem 3rem;
+            p{align-items: center;}
+        }
+    }    
+}
