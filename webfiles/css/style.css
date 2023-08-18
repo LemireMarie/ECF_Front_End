@@ -341,7 +341,7 @@ footer #news #btn input:hover {
     margin: 2.5rem 5rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 431px) and (max-width: 768px) {
   #header {
     width: 100%;
   }
