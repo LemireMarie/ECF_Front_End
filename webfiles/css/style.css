@@ -341,7 +341,7 @@ footer #news #btn input:hover {
     margin: 2.5rem 5rem;
   }
 }
-@media screen and (min-width: 431px) and (max-width: 768px) {
+@media screen and (min-width: 430px) and (max-width: 768px) {
   #header {
     width: 100%;
   }
@@ -503,11 +503,74 @@ footer #news #btn input:hover {
   #header #burger.active::after {
     transform: translate(-50%, -50%) rotateZ(-45deg);
   }
+  #header #intro {
+    flex-direction: column;
+  }
+  #header #intro #title {
+    text-align: center;
+    padding: 3rem;
+  }
+  #header #intro #title h1 {
+    font-size: 2rem;
+  }
   #header #intro #title p {
+    margin: 0;
     font-size: 1rem;
+  }
+  #header #intro #title button {
+    margin: 2rem;
+  }
+  #header #intro #headerImg {
+    position: absolute;
+    bottom: 0;
+    opacity: 0.1;
+  }
+  main #section1 {
+    padding: 1.5rem 1rem;
+  }
+  main #section1 img {
+    width: 100%;
+    object-fit: contain;
+  }
+  main #section1 h2 {
+    font-size: 2rem;
   }
   main #section1 p {
     font-size: 1rem;
+  }
+  main #section2 #img1, main #section2 #img2 {
+    display: flex;
+    flex-direction: column;
+  }
+  main #section2 #img1 #g1, main #section2 #img1 #d1, main #section2 #img1 #g2, main #section2 #img1 #d2, main #section2 #img2 #g1, main #section2 #img2 #d1, main #section2 #img2 #g2, main #section2 #img2 #d2 {
+    width: 100%;
+  }
+  main #section2 #img1 #c1 {
+    bottom: 50%;
+    right: 5%;
+  }
+  main #section2 #img1 #c2 {
+    bottom: 0%;
+    right: 50%;
+  }
+  main #section2 #img2 #c3 {
+    bottom: 0;
+    left: 3%;
+  }
+  main #section2 #img2 #img2, main #section2 #img2 #c4 {
+    bottom: 50%;
+    left: 50%;
+  }
+  footer {
+    flex-direction: column-reverse;
+  }
+  footer #link {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  footer #inte {
+    text-align: center;
   }
   footer #news {
     margin: 2.5rem 3rem;
