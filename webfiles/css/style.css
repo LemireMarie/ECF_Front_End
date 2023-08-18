@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css?family=Source Sans Pro");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  background-color: #61A8BC;
+  margin: auto;
+}
+#header #nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: #61A8BC;
+  z-index: 3;
+}
+#header #nav #logo {
+  object-fit: contain;
+  height: 145px;
+  margin: auto;
+  padding: 1.125rem 1rem;
+}
+#header #nav ul {
+  display: flex;
+  margin: auto;
+}
+#header #nav li {
+  list-style: none;
+  text-align: center;
+}
+#header #nav li a {
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 1rem;
+  display: block;
+  text-decoration: none;
+}
+#header #nav li a:hover {
+  color: #660000;
+}
+#header #nav li a:active {
+  color: #660000;
+}
+#header #intro {
+  display: flex;
+  align-items: flex-end;
+  height: 90vh;
+  padding-top: 3.125rem;
+}
+#header #intro #title {
+  color: white;
+  padding: 3rem 0 3.125rem 5rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+#header #intro #title h1 {
+  font-size: 4.063rem;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+}
+#header #intro #title p {
+  font-size: 1.5rem;
+  text-align: justify;
+  margin: 1.875rem 10rem 1.875rem 0;
+}
+#header #intro #title button {
+  background-color: #660000;
+  margin: 1rem 0 8.063rem 0;
+  padding: 0.5rem;
+  color: white;
+  cursor: pointer;
+}
+#header #intro #title button:hover {
+  background-color: darkgoldenrod;
+}
+#header #intro #headerImg {
+  width: 398px;
+  height: 550px;
+  object-fit: cover;
+}
+
+main section {
+  opacity: 0;
+}
+main section.visible {
+  opacity: 1;
+  transition: 2s;
+}
+main #section1 {
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  padding: 11.563rem 5rem;
+  background: linear-gradient(180deg, #660000 33.33%, #3B0000 100%);
+  color: white;
+}
+main #section1 img {
+  width: 100%;
+  height: 185px;
+  object-fit: contain;
+}
+main #section1 h2 {
+  padding: 1rem;
+  font-size: 4.063rem;
+}
+main #section1 p {
+  margin: 1rem;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+main #section2 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+main #section2 h2 {
+  text-align: center;
+  font-size: 4.063rem;
+}
+main #section2 #img1 {
+  text-align: center;
+  position: relative;
+}
+main #section2 #img1 #g1 {
+  height: 540px;
+  width: 44%;
+  object-fit: cover;
+  z-index: 0;
+}
+main #section2 #img1 #d1 {
+  height: 540px;
+  width: 55%;
+  object-fit: cover;
+  z-index: 0;
+}
+main #section2 #img1 #c1 {
+  position: absolute;
+  bottom: 40%;
+  right: 53%;
+  z-index: 2;
+}
+main #section2 #img1 #c2 {
+  position: absolute;
+  bottom: 15%;
+  right: 46%;
+  z-index: 2;
+}
+main #section2 #img2 {
+  text-align: center;
+  position: relative;
+}
+main #section2 #img2 #d2 {
+  height: 540px;
+  width: 44%;
+  object-fit: cover;
+  z-index: 0;
+}
+main #section2 #img2 #g2 {
+  height: 540px;
+  width: 55%;
+  object-fit: cover;
+  z-index: 0;
+}
+main #section2 #img2 #c3 {
+  position: absolute;
+  bottom: 40%;
+  left: 53%;
+  z-index: 2;
+}
+main #section2 #img2 #c4 {
+  position: absolute;
+  bottom: 10%;
+  left: 46%;
+  z-index: 2;
+}
+
+footer {
+  background: #61A8BC;
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  justify-content: space-around;
+}
+footer #link {
+  text-transform: uppercase;
+  display: flex;
+  color: white;
+}
+footer #link h3 {
+  font-weight: bolder;
+}
+footer #link li {
+  list-style: none;
+}
+footer #link li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+footer #link li a:hover {
+  color: #660000;
+}
+footer #link #aPropos, footer #link #encore {
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+footer .inte {
+  color: white;
+  font-size: 1.125rem;
+  padding-left: 2rem;
+}
+footer #news {
+  background: #D0E4EB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 5rem 0 5rem;
+  margin: 2.5rem 5rem 0 0;
+  font-size: 1.5rem;
+}
+footer #news p {
+  color: #660000;
+}
+footer #news p span {
+  font-weight: bold;
+}
+footer #news #mail {
+  padding: 0.375rem 0.625rem;
+  margin: 1.875rem;
+}
+footer #news #btn {
+  margin-bottom: 2.5rem;
+}
+footer #news #btn input {
+  background-color: #660000;
+  color: white;
+  padding: 0.625rem 2.188rem;
+  cursor: pointer;
+}
+footer #news #btn input:hover {
+  background-color: darkgoldenrod;
+}
+
+#scroll {
+  position: fixed;
+  transform: rotate(-90deg);
+  padding: 1rem;
+  background-color: #660000;
+  opacity: 0.7;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  border-radius: 100%;
+  bottom: 2rem;
+  right: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+#scroll.visible {
+  display: block;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1212px) {
+  #header {
+    width: 100%;
+  }
+  #header #nav ul {
+    display: none;
+    width: 100%;
+  }
+  #header #nav ul.visible {
+    display: block;
+  }
+  #header #burger {
+    position: absolute;
+    top: 2.5rem;
+    right: 4rem;
+    width: 30px;
+    height: 30px;
+    border-top: solid aliceblue 4px;
+    border-bottom: solid aliceblue 4px;
+    border-left: transparent;
+    border-right: transparent;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  #header #burger::before, #header #burger::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    transform: translate(-50%, -50%);
+    height: 4px;
+    background-color: aliceblue;
+  }
+  #header #burger.active {
+    border: none;
+  }
+  #header #burger.active::before {
+    transform: translate(-50%, -50%) rotateZ(45deg);
+  }
+  #header #burger.active::after {
+    transform: translate(-50%, -50%) rotateZ(-45deg);
+  }
+  #header #intro {
+    height: 100%;
+  }
+  #header #intro #title {
+    padding: 3rem 1rem 0 5rem;
+  }
+  #header #intro #title h1 {
+    font-size: 3rem;
+  }
+  #header #intro #title p {
+    margin: 1.875rem 2rem 1.875rem 0;
+  }
+  #header #intro #title button {
+    margin: 1rem 0;
+  }
+  #header #intro #headerImg {
+    width: 40%;
+    height: 50%;
+    margin-top: 8rem;
+  }
+  main #section1 {
+    padding: 1.5rem 1rem;
+  }
+  main #section1 img {
+    width: 100%;
+    object-fit: contain;
+  }
+  footer {
+    flex-direction: column-reverse;
+  }
+  footer #link {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  footer #inte {
+    text-align: center;
+  }
+  footer #news {
+    margin: 2.5rem 5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #header {
+    width: 100%;
+  }
+  #header #nav #logo {
+    height: 90px;
+    width: 30%;
+  }
+  #header #nav ul {
+    display: none;
+    width: 100%;
+  }
+  #header #nav ul.visible {
+    display: block;
+  }
+  #header #burger {
+    position: absolute;
+    top: 2.5rem;
+    right: 4rem;
+    width: 30px;
+    height: 30px;
+    border-top: solid aliceblue 4px;
+    border-bottom: solid aliceblue 4px;
+    border-left: transparent;
+    border-right: transparent;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  #header #burger::before, #header #burger::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    transform: translate(-50%, -50%);
+    height: 4px;
+    background-color: aliceblue;
+  }
+  #header #burger.active {
+    border: none;
+  }
+  #header #burger.active::before {
+    transform: translate(-50%, -50%) rotateZ(45deg);
+  }
+  #header #burger.active::after {
+    transform: translate(-50%, -50%) rotateZ(-45deg);
+  }
+  #header #intro {
+    flex-direction: column;
+  }
+  #header #intro #title {
+    text-align: center;
+    padding: 3rem;
+  }
+  #header #intro #title h1 {
+    font-size: 2rem;
+  }
+  #header #intro #title p {
+    margin: 0;
+  }
+  #header #intro #title button {
+    margin: 2rem;
+  }
+  #header #intro #headerImg {
+    position: absolute;
+    bottom: 0;
+    opacity: 0.1;
+  }
+  main #section1 {
+    padding: 1.5rem 1rem;
+  }
+  main #section1 img {
+    width: 100%;
+    object-fit: contain;
+  }
+  main #section1 h2 {
+    font-size: 2rem;
+  }
+  main #section2 #img1, main #section2 #img2 {
+    display: flex;
+    flex-direction: column;
+  }
+  main #section2 #img1 #g1, main #section2 #img1 #d1, main #section2 #img1 #g2, main #section2 #img1 #d2, main #section2 #img2 #g1, main #section2 #img2 #d1, main #section2 #img2 #g2, main #section2 #img2 #d2 {
+    width: 100%;
+  }
+  main #section2 #img1 #c1 {
+    bottom: 50%;
+    right: 5%;
+  }
+  main #section2 #img1 #c2 {
+    bottom: 0%;
+    right: 50%;
+  }
+  main #section2 #img2 #c3 {
+    bottom: 0;
+    left: 3%;
+  }
+  main #section2 #img2 #img2, main #section2 #img2 #c4 {
+    bottom: 50%;
+    left: 50%;
+  }
+  footer {
+    flex-direction: column-reverse;
+  }
+  footer #link {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  footer #inte {
+    text-align: center;
+  }
+  footer #news {
+    margin: 2.5rem 5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
